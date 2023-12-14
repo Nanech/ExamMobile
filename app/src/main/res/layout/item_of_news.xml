@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="340dp"
+    android:layout_height="180dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="15dp"
+
+    android:clickable="true"
+
+    android:layout_margin="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/news_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Результаты ПЦР-теста на COVID-19 за 3 часа"
+                    android:textColor="@color/black"
+                    android:breakStrategy="simple"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="14sp"
+                    android:autoSizeMaxTextSize="34sp"
+                    android:autoSizeStepGranularity="1sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/news_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Теперь результат ПЦР-теста на COVID-19 можно получить уже через 3 часа!"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/black"
+                    android:autoSizeMinTextSize="9sp"
+                    android:autoSizeMaxTextSize="14sp"
+                    android:autoSizeStepGranularity="0.5sp"
+                    android:breakStrategy="balanced"
+                    app:layout_constraintBottom_toTopOf="@+id/news_price"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/news_name" />
+
+                <TextView
+                    android:id="@+id/news_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:textSize="20sp"
+                    android:text="9999 $"
+                    android:textColor="@color/black"
+                    android:breakStrategy="simple"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/photo_from_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="cover image"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

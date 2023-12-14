@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ExamExampleApp</string>
+
+
+    <!--Наша общая ссылка для апи-->
+    <string name="api_root">https://iis.ngknn.ru/NGKNN/МамшеваЮС/MedicMadlab/</string>
+
+
+</resources>
